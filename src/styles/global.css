@@ -1,10 +1,19 @@
 @import url('modernreset.css');
 
 
-/* h1, h2, h3 {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Chillax-Extralight';
 }
-p {
-  font-family: 'Chillax-Regular';
-} */
 
+p, a {
+  font-family: 'Chillax-Regular';
+}
+
+a {
+  text-decoration: none;
+  font-style: italic;
+}
+
+button:hover {
+  cursor: pointer;
+}
