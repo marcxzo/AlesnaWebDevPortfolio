@@ -1,8 +1,35 @@
 ---
 
 ---
-<a href="/">Home</a>
-<a href="/">Projects</a>
-<a href="/">Blog</a>
-<a href="/">Contact</a>
-<a href="/stylepreview/">Style preview</a>
+<ul>
+  <li>
+    <a href="/">Home</a>
+  </li>
+  <li>
+    <a href="/">Contact</a>
+  </li>
+  <li>
+    <a href="/">Blog</a>
+  </li>
+  <li>
+    <a href="/">Projects</a>
+  </li>
+  <li>
+    <a href="/stylepreview/">Style preview</a>
+  </li>
+</ul>
+
+<style>
+  ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    padding: 0;
+  }
+  ul li {
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+  }
+</style>

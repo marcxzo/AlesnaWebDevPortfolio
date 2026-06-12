@@ -1,7 +1,19 @@
 ---
 // import '../styles/chillax.css'
 import Baselayout from '../layouts/baselayout.astro'
+import Hero from '../components/hero.astro'
 ---
 <Baselayout>
-	<h1>this is the index page</h1>
+	<Hero/>
+	<div class="container section"><p>mini about</p></div>
+	<div class="container section"><p>projects preview</p></div>
+	<div class="container section"><p>contact</p></div>
 </Baselayout>
+
+<style>
+	body {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+</style>
