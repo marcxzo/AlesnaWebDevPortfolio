@@ -21,7 +21,7 @@
 
 <style>
   ul {
-    display: flex;
+    display: none;
     flex-direction: row;
     gap: 1em;
     padding: 0;
@@ -31,5 +31,21 @@
   }
   a {
     text-decoration: none;
+    padding: 0.5em;
+  }
+  a:hover{
+    transform: scale(1.1);
+    background-color: black;
+    transition: all 0.2s ease-in;
+    color: var(--clr-light);
+  }
+  /* xs */
+  /* @media (min-width: 475px) {} */
+
+  /* sm */
+  @media (min-width: 640px) {
+    ul{
+      display: flex;
+    }
   }
 </style>

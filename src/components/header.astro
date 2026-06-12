@@ -2,8 +2,13 @@
 import Navigation from "./navigation.astro"
 ---
 <div class="container">
-  <p>Logo Here</p>
+  <a href="/">
+    <p>theweb.dev</p>
+  </a>
   <Navigation/>
+  <div class="hamburger">
+    <p>hambg.</p>
+  </div>
 </div>
 
 <style>
@@ -11,5 +16,28 @@ import Navigation from "./navigation.astro"
     display: flex;
     justify-content: space-between;
     padding: var(--size-2xl);
+    align-items: center;
+  }
+  a{
+    font-size: var(--size-2xl);
+    text-decoration: none;
+    color: var(--clr-crimson);
+    padding: .25em;
+    display: block;
+  }
+  a:hover{
+    transform: scale(1.1);
+    background-color: black;
+    transition: all 0.2s ease-in;
+    color: var(--clr-light);
+  }
+  /* xs */
+  /* @media (min-width: 475px) {} */
+
+  /* sm */
+  @media (min-width: 640px) {
+    .hamburger{
+      display: none;
+    }
   }
 </style>
